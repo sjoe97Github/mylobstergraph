@@ -7,7 +7,8 @@ on:
   workflow_dispatch: # Required even though this is currently empty
   schedule:
 #    - cron: '*/5 * * * *' # Run this workflow every 5 minutes
-    - cron: '*/60 * * * *' # Run this workflow every 60 minutes
+#    - cron: '*/60 * * * *' # Run this workflow every 60 minutes
+     - cron: '0 */6 * * *' # run every 6 hours
 
 jobs:
   scheduled:
